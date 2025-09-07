@@ -114,24 +114,24 @@ const Reviews = () => {
         ]
   return (
     <>
-        <section id='Reviews' className='mt-[112px]'>
+        <section id='Reviews' className='mt-[112px] overflow-hidden'>
             <div className="container">
                 <div id="Reviews-Row">
                     {/* ------------Header------------ */}
                     <div>
-                        <h2 className='text-gray900 text-[40px] font-extrabold text-center mb-[64px]'>Clients are Loving Our App</h2>
+                        <h2 className='text-gray900 lg:text-[40px] text-[28px] font-extrabold text-center mb-[64px]'>Clients are Loving Our App</h2>
                     </div>
                     {/* ------------Reviews Slider------------ */}
-                    <div className='flex items-start justify-between'>
-                        <div className='w-[250px]'>
-                            <h2 className='text-gray900 text-[40px] font-extrabold leading-[130%]'>What People Say About Us</h2>
+                    <div className='flex lg:flex-row flex-col items-start justify-between'>
+                        <div className='w-[250px] lg:mb-0 mb-10 lg:block hidden'>
+                            <h2 className='text-gray900 lg:text-[40px] text-[26px] font-extrabold leading-[130%]'>What People Say About Us</h2>
                         </div>
                         <div className="w-[966px]">
                             <Slider {...settings}>
                                 {
                                     ReviewData.map((item , e)=>(
                                         <div key={e}>
-                                            <div className='w-[306px] px-[24px] pb-[24px] rounded-[8px]'>
+                                            <div className='lg:w-[306px] w-full px-[24px] pb-[24px] rounded-[8px]'>
                                                 {/* -------Quote------ */}
                                                 <div id='Quote' className='bg-brand w-[44px] h-[44px] rounded-[6px] flex items-center justify-center'>
                                                     <FaQuoteLeft className='text-[20px] text-white'/>
