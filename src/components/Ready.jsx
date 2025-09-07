@@ -9,11 +9,11 @@ const Ready = () => {
                 <div id="Ready-Row">
                     {/* ---------------Header--------------- */}
                     <div>
-                        <h2 className='text-gray900 lg:text-[40px] text-[28px] font-extrabold text-center'>Ready to Get Started? </h2>
-                        <p className='text-gray700 font-normal text-center mt-6 lg:text-lg text-base '>Organize your tasks with a 14-day free trial</p>
+                        <h2 className='text-gray900 lg:text-[40px] text-[28px] font-extrabold text-center' data-aos="fade-up">Ready to Get Started? </h2>
+                        <p className='text-gray700 font-normal text-center mt-6 lg:text-lg text-base' data-aos="fade-up">Organize your tasks with a 14-day free trial</p>
                     </div>
                     {/* ------------Button---------- */}
-                    <div className='flex items-center justify-center mt-[43px]'>
+                    <div className='flex items-center justify-center mt-[43px]' data-aos="fade-up">
                         <button id='ArrowDownSHadow' className='bg-brand py-[13px] px-[32px] hover:bg-gray200 hover:text-gray800 duration-[.3s] text-white flex items-center gap-2 rounded-[4px] font-manrope text-[14px] font-semibold cursor-pointer'>
                             <span>Ger started</span>
                         </button>

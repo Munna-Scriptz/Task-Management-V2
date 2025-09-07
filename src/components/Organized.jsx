@@ -57,15 +57,15 @@ const Organized = () => {
             <div className="container">
                 <div id="Use-Row">
                     {/* ------------Header------------ */}
-                    <div><h2 className='text-gray900 lg:text-[40px] text-[30px] font-extrabold text-center'>What Do You Get with Our Tool?</h2></div>
-                    <div className='flex items-center justify-center'>
+                    <div><h2 className='text-gray900 lg:text-[40px] text-[30px] font-extrabold text-center' data-aos="fade-up">What Do You Get with Our Tool?</h2></div>
+                    <div className='flex items-center justify-center' data-aos="fade-up">
                         <p className='text-gray600 lg:text-lg text-sm font-normal text-center lg:w-[636px] w-full mt-6'>Make sure all your tasks are organized so you can set the priorities and focus on important.</p>
                     </div>
                     {/* ------------List------------ */}
-                    <div className='flex items-center justify-between mt-[64px] gap-y-[56px] flex-wrap'>
+                    <div className='flex items-center justify-between mt-[64px] gap-y-[56px] flex-wrap' data-aos="fade-up">
                         {
                             MyOrganized.map((item , e)=>(
-                            <div key={e} className='md:w-[298px] w-full flex items-center flex-col gap-6'>
+                            <div key={e} className='md:w-[298px] w-full flex items-center flex-col gap-6' data-aos="fade-up">
                                 <div><img src={item.icon} alt="icon" /></div>
                                 <div>
                                     <h2 className='text-gray900 text-xl font-extrabold text-center'>{item.upperText}</h2>

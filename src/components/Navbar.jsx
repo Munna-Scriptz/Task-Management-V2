@@ -7,7 +7,7 @@ import { IoLogInOutline } from "react-icons/io5";
 const Navbar = () => {
   return (
     <>
-        <nav className='bg-transparent lg:block hidden'>
+        <nav className='bg-transparent lg:block hidden' data-aos="fade-down" data-aos-offset="300" data-aos-easing="linear" data-aos-delay="1000">
             <div className="container">
                 <div id="NavBar_Row" className='py-[25px] flex items-center justify-between'>
                     <div className='flex items-center gap-[58px]'>

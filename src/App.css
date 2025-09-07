@@ -46,17 +46,6 @@ body{
 
 
 /* ------------Slider Css-------------- */
-.slick-prev {
-    left: -315px!important;
-    top: 260px !important;
-    color: #3E4265 !important;
-    z-index: 10;
-}
-.slick-next {
-    top: 260px !important;
-    right: 1200px !important;
-    color: #3E4265 !important;
-}
 .slick-initialized .slick-slide {
     display: flex !important;
     align-items: center !important;

@@ -15,6 +15,29 @@ import pfp5 from '../assets/images/pfp5.png'
 import pfp6 from '../assets/images/pfp6.png'
 
 const Reviews = () => {
+    function NextArrow(props) {
+      const { onClick } = props;
+      return (
+        <div
+          onClick={onClick}
+          className="absolute right-[1120px] top-[260px] cursor-pointer z-10 w-[45px] h-[45px] text-[#3E4265] border-1 border-primary flex items-center justify-center rounded-full hover:bg-primary hover:text-borderCol duration-[.3s]"
+        >
+          <FaAngleRight size={20} />
+        </div>
+      );
+    }
+    
+    function PrevArrow(props) {
+      const { onClick } = props;
+      return (
+        <div
+          onClick={onClick}
+          className="absolute left-[-275px] top-[260px] cursor-pointer z-10 w-[45px] h-[45px] text-[#3E4265] border-1 border-primary flex items-center justify-center rounded-full hover:bg-primary hover:text-borderCol duration-[.3s]"
+        >
+          <FaAngleLeft size={20}/>
+        </div>
+      );
+    }
     const settings = {
         dots: true,
         infinite: true,
@@ -23,8 +46,8 @@ const Reviews = () => {
         autoplaySpeed: 2000,
         slidesToShow: 3,
         slidesToScroll: 1,
-        nextArrow: <FaAngleRight />,
-        prevArrow: <FaAngleLeft />,
+        nextArrow: <NextArrow />,
+        prevArrow: <PrevArrow />,
         responsive: [
       {
         breakpoint: 1024,
@@ -144,19 +167,19 @@ const Reviews = () => {
             <div className="container">
                 <div id="Reviews-Row">
                     {/* ------------Header------------ */}
-                    <div>
+                    <div data-aos="fade-up">
                         <h2 className='text-gray900 lg:text-[40px] text-[28px] font-extrabold text-center mb-[64px]'>Clients are Loving Our App</h2>
                     </div>
                     {/* ------------Reviews Slider------------ */}
                     <div className='flex lg:flex-row flex-col items-start justify-between'>
-                        <div className='w-[250px] lg:mb-0 mb-10 lg:block hidden'>
+                        <div className='w-[250px] lg:mb-0 mb-10 lg:block hidden' data-aos="fade-right">
                             <h2 className='text-gray900 lg:text-[40px] text-[26px] font-extrabold leading-[130%]'>What People Say About Us</h2>
                         </div>
                         <div className="w-[966px]">
                             <Slider {...settings}>
                                 {
                                     ReviewData.map((item , e)=>(
-                                        <div key={e}>
+                                        <div key={e} data-aos="fade-up">
                                             <div className='lg:w-[306px] w-full px-[24px] pb-[24px] rounded-[8px]'>
                                                 {/* -------Quote------ */}
                                                 <div id='Quote' className='bg-brand w-[44px] h-[44px] rounded-[6px] flex items-center justify-center'>

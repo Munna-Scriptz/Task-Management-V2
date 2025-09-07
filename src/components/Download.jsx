@@ -7,17 +7,17 @@ import play from '../assets/images/PlaystoreIcon.png'
 const Download = () => {
   return (
     <>
-        <section id='Download' className='mt-[212px]'>
+        <section id='Download' className='mt-[212px] overflow-hidden'>
             <div className="container">
                 <div id="Download-Row" className='flex lg:flex-row flex-col items-center justify-between'>
                     {/* -------------Left Side------------ */}
-                    <div>
+                    <div data-aos="fade-right">
                         <img src={DownloadImage} alt="Image" />
                     </div>
                     {/* -------------Right Side------------ */}
                     <div>
-                        <h2 className='text-gray900 lg:text-[40px] text-[28px] font-extrabold lg:w-[416px] mb-12 lg:mt-0 mt-10'>Download Our App for Any Devices:</h2>
-                        <div>
+                        <h2 className='text-gray900 lg:text-[40px] text-[28px] font-extrabold lg:w-[416px] mb-12 lg:mt-0 mt-10' data-aos="fade-left">Download Our App for Any Devices:</h2>
+                        <div data-aos="fade-left">
                             <p className='text-gray600 text-base'>App Store</p>
                             <div className='text-[#FFBA08] text-sm flex items-center gap-[2px] mt-2'>
                                 <FaStar />
@@ -40,7 +40,7 @@ const Download = () => {
                                 </a>
                             </div>
                         </div>
-                        <div className='mt-10'>
+                        <div className='mt-10' data-aos="fade-left">
                             <p className='text-gray600 text-base'>App Store</p>
                             <div className='text-[#FFBA08] text-sm flex items-center gap-[2px] mt-2'>
                                 <FaStar />

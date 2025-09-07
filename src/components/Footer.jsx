@@ -15,26 +15,26 @@ const Footer = () => {
                     <div className="container">
                         <div id="Footer-Row" className='flex flex-col items-center'>
                             {/* -------Footer Logo------- */}
-                            <Link to={'/'}><img src={Logo} alt="Logo" /></Link>
+                            <Link to={'/'} data-aos="fade-up"><img src={Logo} alt="Logo" /></Link>
                             {/* -------Footer Links------- */}
                             <ul className='flex lg:flex-row flex-col items-center lg:gap-[56px] gap-3 mt-[48px]'>
-                                <li className='text-white opacity-[0.85] text-base'><Link id='UnderLineHover' to={'/'}>Home</Link></li>
-                                <li className='text-white opacity-[0.85] text-base'><Link id='UnderLineHover' to={'/'}>Features</Link></li>
-                                <li className='text-white opacity-[0.85] text-base'><Link id='UnderLineHover' to={'/'}>Overview</Link></li>
-                                <li className='text-white opacity-[0.85] text-base'><Link id='UnderLineHover' to={'/'}>Blog</Link></li>
-                                <li className='text-white opacity-[0.85] text-base'><Link id='UnderLineHover' to={'/'}>Contact</Link></li> 
-                                <li className='text-white opacity-[0.85] text-base'><Link id='UnderLineHover' to={'/'}>Account</Link></li> 
+                                <li className='text-white opacity-[0.85] text-base'><Link id='UnderLineHover' to={'/'} data-aos="fade-up">Home</Link></li>
+                                <li className='text-white opacity-[0.85] text-base'><Link id='UnderLineHover' to={'/'} data-aos="fade-up">Features</Link></li>
+                                <li className='text-white opacity-[0.85] text-base'><Link id='UnderLineHover' to={'/'} data-aos="fade-up">Overview</Link></li>
+                                <li className='text-white opacity-[0.85] text-base'><Link id='UnderLineHover' to={'/'} data-aos="fade-up">Blog</Link></li>
+                                <li className='text-white opacity-[0.85] text-base'><Link id='UnderLineHover' to={'/'} data-aos="fade-up">Contact</Link></li> 
+                                <li className='text-white opacity-[0.85] text-base'><Link id='UnderLineHover' to={'/'} data-aos="fade-up">Account</Link></li> 
                             </ul>
                             {/* -------Footer Button------- */}
                             <div className='lg:mt-[64px] mt-[32px] flex lg:flex-row flex-col items-center gap-[24px]'>
-                                    <a href='#' className='bg-white flex items-center gap-[11px] py-[10px] px-[22px] w-fit rounded-[8px]'>
+                                    <a href='#' className='bg-white flex items-center gap-[11px] py-[10px] px-[22px] w-fit rounded-[8px]' data-aos="fade-up">
                                         <img src={Apple} alt="icon" />
                                         <div>
                                             <p className='text-gray800 lg:text-sm text-xs leading-[15px]'>Download on the</p>
                                             <h2 className='lg:text-[20px] text-base text-gray800 font-semibold lg:leading-[26px]'>Apple Store</h2>
                                         </div>
                                     </a>
-                                    <a href='#' className='bg-white flex items-center gap-[11px] py-[10px] px-[22px] w-fit rounded-[8px]'>
+                                    <a href='#' className='bg-white flex items-center gap-[11px] py-[10px] px-[22px] w-fit rounded-[8px]' data-aos="fade-up">
                                         <img src={Play} alt="icon" />
                                         <div>
                                             <p className='text-gray800 lg:text-sm text-xs leading-[15px]'>GET IT ON</p>
@@ -43,7 +43,7 @@ const Footer = () => {
                                     </a>
                             </div>
                             {/* -------Footer Social Links------- */}
-                            <div className='lg:mt-[56px] mt-[32px] flex items-center gap-[16px]'>
+                            <div className='lg:mt-[56px] mt-[32px] flex items-center gap-[16px]' data-aos="fade-up">
                                 <Link to={'/'} className='text-white text-[18px] w-[44px] h-[44px] bg-[#FFFFFF0D] rounded-[6px] flex items-center justify-center duration-[.3s] hover:bg-brand hover:text-gray300 '>
                                     <FaFacebookSquare />
                                 </Link>
