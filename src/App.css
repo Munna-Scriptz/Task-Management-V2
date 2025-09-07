@@ -1,0 +1,77 @@
+/* ---------------Common css------------- */
+body{
+    font-family: "Manrope", sans-serif;
+}
+#Banner::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url(../src/assets/images/BannerBg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; 
+    width: 100%;
+    z-index: -1;
+}
+#ArrowDownSHadow , #Quote{
+    box-shadow: rgba(104, 87, 190, 0.788) 0px 15px 30px -10px;
+}
+#SliderBoxShadow{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+#UnderLineHover{
+    position: relative;
+}
+#UnderLineHover::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background: linear-gradient(90deg,rgba(99, 102, 241, 1) 0%, rgba(183, 65, 215, 1) 100%);
+    border-radius: 6px;
+    transition: 300ms ease-in-out all;
+}
+#UnderLineHover:hover::after{
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+/* ------------Slider Css-------------- */
+.slick-prev {
+    left: -315px!important;
+    top: 260px !important;
+    color: #3E4265 !important;
+    z-index: 10;
+}
+.slick-next {
+    top: 260px !important;
+    right: 1200px !important;
+    color: #3E4265 !important;
+}
+.slick-initialized .slick-slide {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+.slick-dots li.slick-active button:before {
+    opacity: 1 !important;
+    color: #6366F1 !important;
+}
+.slick-dots li {
+    margin: 0 !important;
+}
+.slick-dots {
+    bottom: -66px !important;
+}
+.slick-dots li button:hover {
+    color: #6366F1 !important;
+}
