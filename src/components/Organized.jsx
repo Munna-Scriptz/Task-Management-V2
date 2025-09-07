@@ -65,7 +65,7 @@ const Organized = () => {
                     <div className='flex items-center justify-between mt-[64px] gap-y-[56px] flex-wrap'>
                         {
                             MyOrganized.map((item , e)=>(
-                            <div className='md:w-[298px] w-full flex items-center flex-col gap-6'>
+                            <div key={e} className='md:w-[298px] w-full flex items-center flex-col gap-6'>
                                 <div><img src={item.icon} alt="icon" /></div>
                                 <div>
                                     <h2 className='text-gray900 text-xl font-extrabold text-center'>{item.upperText}</h2>

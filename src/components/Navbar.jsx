@@ -10,7 +10,7 @@ const Navbar = () => {
         <nav className='bg-transparent lg:block hidden'>
             <div className="container">
                 <div id="NavBar_Row" className='py-[25px] flex items-center justify-between'>
-                    <div className='flex items-center gap-[48px]'>
+                    <div className='flex items-center gap-[58px]'>
                         <img src={Logo} alt="Logo" />
                         <ul className='flex items-center gap-[24px] font-manrope font-semibold text-base text-white opacity-[0.85]'>
                             <li><Link id='UnderLineHover' to={'/'}>Features</Link></li>

@@ -24,7 +24,33 @@ const Reviews = () => {
         slidesToShow: 3,
         slidesToScroll: 1,
         nextArrow: <FaAngleRight />,
-        prevArrow: <FaAngleLeft />
+        prevArrow: <FaAngleLeft />,
+        responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 2
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
     };
     const ReviewData = [
             {
@@ -137,8 +163,14 @@ const Reviews = () => {
                                                     <FaQuoteLeft className='text-[20px] text-white'/>
                                                 </div>
                                                 <p className='text-gray700 text-base mt-[24px] h-[156px]'>{item.message}</p>
-                                                <div key={e} className='text-[#FFBA08] text-[12px] flex items-center gap-1 mt-[16px]'>
-                                                    {item.stars}
+                                                <div className='flex items-center gap-1'>
+                                                    {
+                                                        item.stars.map((item , e)=>(
+                                                            <div key={e} className='text-[#FFBA08] text-[12px] mt-[16px]'>
+                                                                {item}
+                                                            </div>
+                                                        ))
+                                                    }
                                                 </div>
                                             </div>
                                             {/* ----------Profile--------- */}
